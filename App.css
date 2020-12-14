@@ -1,0 +1,243 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, auto);
+  
+}
+hr.style-five {
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 10px 1px black;
+}
+hr.style-five:after {  /* Not really supposed to work, but does */
+  content: "\00a0";  /* Prevent margin collapse */
+}
+
+.myCard{
+  background:LINEAR-GRADIENT(TO BOTTOM, #9baebb, #30556d);
+  /* background:LINEAR-GRADIENT(TO BOTTOM, #c1dff3, #69b6e9); */
+  /* background:LINEAR-GRADIENT(TO BOTTOM, rgb(255, 255, 255), rgb(158, 157, 157)); */
+  border-style:solid;
+  border-width: 0.1rem;
+  border-color:rgba(0, 0, 0, 0.5);
+  /* padding-bottom: 5rem; */
+  padding: 1rem 1rem 7rem 1rem;
+}
+.icons{
+  width: 180px;
+  height: 180px;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.header {
+    position: relative;
+  font-family: 'Audiowide';
+  /* background-color: white; */
+
+  text-decoration: none !important;
+  padding: 1px 20px;
+background-size: 70px 120px;
+box-shadow: 0 1px 4px 4px rgba(0,0,0,0.3), inset 0 0 2px rgba(33,33,33,0.6);
+}
+.header a {
+  
+  text-decoration: none !important;
+  color: black;
+}
+
+
+.cardTitle{
+  position: absolute;
+    top: 61%;
+    left: -1px;
+    width: 101%;
+    height: 40.2%;
+    display: block;
+    color: #FFF;
+    padding: 5px;
+  /* z-index: 30; */
+  background: rgba(0, 0, 0, .6);
+  text-decoration: none;
+/* font-family: 'Roboto Slab', serif; */
+/* font-family: 'Anton', sans-serif; */
+font-family:  cursive;
+/* font-weight:bold; */
+font-size: 17px;
+border-radius: 0.25rem;
+}
+.title{
+  position: absolute;
+    top: 5%;
+    left: 1rem;
+    width: 10.6rem;
+    height: 5.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    /* border: 1px solid #000000; */
+
+}
+
+
+.textAreas{
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 250px auto auto;
+  
+  /* display: flex;
+  flex-direction: column; */
+  /* align-content: flex-start; */
+  /* justify-content: flex-start; */
+  
+}
+
+.textArea{
+  border: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 3%;
+  margin-right: 20px;
+  width: 95%;
+  border-radius:0.3rem;
+  height: 200px;
+  text-align: left;
+  resize: none;
+  overflow:auto;
+
+  background: transparent;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 10;
+} 
+.codeArea{
+  border: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 80%;
+  background:black;
+  color: white;
+}
+
+.textAreaCont{
+  width: auto;
+  display: inline-block;
+}
+.textHigh{
+  /* margin-left: 73px;
+  margin-right: 73px; */
+  margin-left: 3%;
+  margin-right: 20px;
+  padding-right: 2px;
+
+    width: 94.3%;
+  position: relative;
+  display: block;
+  z-index: 1;
+  top: 8.5%;
+  left: 0.2%;
+  /* color: red; */
+  color: transparent;
+  text-align: left;
+  overflow-wrap: break-word;
+  overflow:auto;
+  white-space: pre-wrap;
+  height: 200px;
+
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.aka{
+  background-color: red;
+}
+.midori{
+  background-color: green;
+}
+.container{
+position: relative;
+height: 250px;
+}
+
+
+@media screen and (max-width: 625px) {
+  .textHigh {
+     width: 320px;
+     /* color: blue; */
+  }
+  .textArea{
+    width: 320px;
+  }
+}
+
+.mybutton{
+  margin-left: 10px;
+  width: 400px;
+  background: #f3f0f1;
+    position: relative;
+    background: #f3f0f1;
+    margin-bottom: 25px;
+    border-radius: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  line-height: 70px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 26px;
+      font-weight: semibold;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+        6px 6px 10px rgba(0, 0, 0, 0.2);
+      color: #6f6cde;
+}
+.mybutton:hover {
+  opacity: 0.3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.mybutton:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  color: #79e3b6;
+}
+
+.mybutton-1{
+  display: inline-block;
+  /* margin-top: 10px; */
+  /* margin-left: 10px; */
+  width: 200px;
+  background: #f3f0f1;
+    position: relative;
+    background: #f3f0f1;
+    margin-bottom: 25px;
+    /* border-radius: 22px; */
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  line-height: 70px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: semibold;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+        6px 6px 10px rgba(0, 0, 0, 0.2);
+      color: #373649;
+}
+.mybutton-1:hover {
+  opacity: 0.3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.mybutton-1:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  color: #79e3b6;
+}
+
+
+
